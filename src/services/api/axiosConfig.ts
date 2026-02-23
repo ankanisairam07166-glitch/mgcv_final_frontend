@@ -21,10 +21,10 @@
 // export default axiosInstance
 import axios from 'axios'
 
-export const BACKEND_URL = process.env.NEXT_PUBLIC_API_BASE_URL || ""
+export const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "https://palestinian-lion-rejected-encyclopedia.trycloudflare.com"
 
 const axiosInstance = axios.create({
-  baseURL: BACKEND_URL,
+  baseURL: `${BACKEND_URL}/`,
   headers: {
     'Content-Type': 'application/json',
   },
