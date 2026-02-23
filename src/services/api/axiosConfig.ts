@@ -21,10 +21,8 @@
 // export default axiosInstance
 import axios from 'axios'
 
-export const BACKEND_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://13.235.33.191'
-
 const axiosInstance = axios.create({
-  baseURL: BACKEND_URL,
+  baseURL: '',
   headers: {
     'Content-Type': 'application/json',
   },
