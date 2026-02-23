@@ -4,9 +4,10 @@
 //   /* config options here */
 // };
 
-// export default nextConfig;
+// export default nextConfig
+import type { NextConfig } from "next";
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
@@ -17,10 +18,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
-```
-
-Then update env variables to:
-```
-NEXT_PUBLIC_API_BASE_URL = 
-NEXT_PUBLIC_API_URL =
+export default nextConfig;
