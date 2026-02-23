@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'http://13.235.33.191/:path*',
+        destination: 'https://palestinian-lion-rejected-encyclopedia.trycloudflare.com/:path*',
       },
     ];
   },
