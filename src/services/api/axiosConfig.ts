@@ -21,7 +21,7 @@
 // export default axiosInstance
 import axios from 'axios'
 
-export const BACKEND_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://13.235.33.191'
+export const BACKEND_URL = process.env.NEXT_PUBLIC_API_BASE_URL || ""
 
 const axiosInstance = axios.create({
   baseURL: BACKEND_URL,
