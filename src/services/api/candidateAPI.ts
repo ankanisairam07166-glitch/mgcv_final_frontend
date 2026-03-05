@@ -133,13 +133,13 @@ import axiosInstance from "@/services/api/axiosConfig";
 import type { Candidate, Job } from "@/services/interfaces/CandidateScreening";
 
 // Extended type to handle backend response variations
-interface CandidateResponse extends Candidate {
+type CandidateResponse = Omit<Candidate, 'processed_date' | 'ats_score'> & {
+  ats_score?: number;
   score?: number;
   processed_date?: string | null;
   created_at?: string | null;
   updated_at?: string | null;
-}
-
+};
 /** GET /api/jobs */
 export async function fetchJobs(): Promise<Job[]> {
   const { data } = await axiosInstance.get<Job[]>("api/jobs");
