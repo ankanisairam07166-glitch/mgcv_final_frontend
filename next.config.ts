@@ -11,6 +11,14 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "http://13.232.17.99:5000/api/:path*",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
