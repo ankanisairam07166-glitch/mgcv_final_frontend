@@ -21,7 +21,7 @@
 // export default axiosInstance
 import axios from 'axios'
 
-export const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "https://seas-hill-margaret-believe.trycloudflare.com"
+export const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "https://female-developing-mode-restaurants.trycloudflare.com"
 
 const axiosInstance = axios.create({
   baseURL: `${BACKEND_URL}/`,
